@@ -29,6 +29,7 @@ app.post('/payment', (req, res) => {
     const body = {
         source: req.body.token.id,
         amount: req.body.amount,
+        receipt_email: req.body.email,
         currency: 'INR'
     }
 
