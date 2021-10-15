@@ -45,7 +45,7 @@ export const AddButton = styled(CustomButton)`
 `;
 
 export const BackgroundImage = styled.div`
-  width: 100%;
+  width: 98%;
   height: 95%;
   background-size: cover;
   background-position: center;
@@ -54,7 +54,7 @@ export const BackgroundImage = styled.div`
 `;
 
 export const CollectionFooterContainer = styled.div`
-  width: 100%;
+  width: 90%;
   height: 5%;
   display: flex;
   justify-content: space-between;
@@ -62,11 +62,11 @@ export const CollectionFooterContainer = styled.div`
 `;
 
 export const NameContainer = styled.span`
-  width: 90%;
-  margin-bottom: 15px;
+  width: 70%;
+  margin-bottom: 25px;
 `;
 
 export const PriceContainer = styled.span`
-  width: 10%;
+  width: 20%;
   text-align: right;
 `;
