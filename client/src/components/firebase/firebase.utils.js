@@ -67,6 +67,15 @@ export const convertCollectionsSnapshotToMap = (collection) => {
     }, {});
 };
 
+export const addToFireStore = async (contactKey, itemToAdd) => {
+    const collectionRef = firestore.collection(contactKey);
+    const newDocRef = collectionRef.doc();
+    const batch = firestore.batch();
+    batch.set(newDocRef, itemToAdd);
+
+    return await batch.commit()
+}
+
 export const getCurrentUser = () => {
     return new Promise((resolve, reject) => {
         const unsubscribe = auth.onAuthStateChanged(userAuth => {
